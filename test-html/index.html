@@ -1,0 +1,21 @@
+<DOCTYPE! html>
+<html>
+  <head>
+    <title>Glowing Text</title>
+    <style>
+      .glow {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="glowText">Hello, world!</h1>
+    <button onclick="makeTextGlow()">Make Text Glow</button>
+    <script>
+      function makeTextGlow() {
+        var text = document.getElementById("glowText");
+        text.classList.toggle("glow");
+      }
+    </script>
+  </body>
+</html>
